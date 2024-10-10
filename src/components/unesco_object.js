@@ -1,7 +1,7 @@
-import React from 'react';
 import bombDomeImage from '../images/bomb-dome.jpg'
 import todaijiImage from '../images/Todai-ji.jpg'
 import shirakawagoImage from '../images/shirakawago.jpg'
+import amamiOshima from '../images/amamioshima.jpg'
 
   const UnescoObject = [
     {
@@ -34,8 +34,8 @@ import shirakawagoImage from '../images/shirakawago.jpg'
     {
       name: "Itsukushima Jinja",
       prefecture: "Hiroshima",
-      latitude: 4,
-      longitude: 4,
+      latitude: 34.295833,
+      longitude: 132.319722,
       img: "placeholder",
       dateAdded: '1996',
       shortDescription: 'Itsukushima Jinja is amazing. Unlike Joel.'
@@ -216,7 +216,7 @@ import shirakawagoImage from '../images/shirakawago.jpg'
       prefecture: 'Kagoshima and Okianwa',
       latitude: 16.6,
       longitude: 16.6,
-      img: 'placeholder',
+      img: amamiOshima,
       dateAdded: '2019',
       shortDescription: 'More Islands. MORE MORE MORE!'
     },
