@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.medium-card {
+  display: grid;
+  overflow: hidden;
+  background: rgb(214, 211, 211);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  width: 25%;
+  float: left;
+  margin: 16px;
+}
+
+.medium-card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.medium-card h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.medium-card .medium-card-content {
+  padding: 16px;
+}
