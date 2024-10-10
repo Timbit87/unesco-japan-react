@@ -11,7 +11,6 @@ function UnescoCard() {
         <h1>{site.name}</h1>
         <h3>{site.prefecture}</h3>
         <p>{site.shortDescription}</p>
-      <a href='#'>Wikipedia link I guess</a>
       </div>
     </div>
   ))
