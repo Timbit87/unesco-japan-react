@@ -30,6 +30,33 @@ import shirakawagoImage from '../images/shirakawago.jpg'
       img: bombDomeImage,
       dateAdded: 'September 11th 2001',
       shortDescription: 'The bomb dome is what happens when you become friends with Joel'
+    },
+    {
+      name: "Itsukushima Jinja",
+      prefecture: "Hiroshima",
+      latitude: 4,
+      longitude: 4,
+      img: "placeholder",
+      dateAdded: 'September 11th 2001',
+      shortDescription: 'Itsukushima Jinja is amazing. Unlike Joel.'
+    },
+    {
+      name: 'Himeji Castle',
+      prefecture: 'Hyogo',
+      latitude: 12,
+      longitude: 12,
+      img: "placeholder",
+      dateAdded: 'September 11th 2001',
+      shortDescription: 'Himeji Castle is the most amazing castle still standing.'
+    },
+    {
+      name: 'Yakushima Island',
+      prefecture: 'Kagoshima',
+      latitude: 12,
+      longitude: 12,
+      img: 'placeholder',
+      dateAdded: 'September 11th 2001',
+      shortDescription: "Yakushima, not to be confused with Yakuzashima, is an island."
     }
   ]
 
