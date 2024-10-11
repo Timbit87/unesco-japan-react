@@ -39,3 +39,9 @@ code {
 .medium-card .medium-card-content {
   padding: 16px;
 }
+
+#map-container {
+  height: 80%;
+  width:80%;
+  background-color: lightgray;
+}
