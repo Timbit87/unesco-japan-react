@@ -4,8 +4,8 @@ import UnescoObject from './unesco_object'
 
 function UnescoCard() {
   return (
-    UnescoObject.map(site =>
-    <div className='medium-card'>
+    UnescoObject.map((site, index) =>
+    <div className='medium-card' key={index}>
       <img src={site.img} alt={site.name}></img>
       <div className='medium-card-content'>
         <h1>{site.name}</h1>
