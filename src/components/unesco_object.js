@@ -1,7 +1,7 @@
 import bombDomeImage from '../images/bomb-dome.jpg'
 import todaijiImage from '../images/Todai-ji.jpg'
 import shirakawagoImage from '../images/shirakawago.jpg'
-// import amamiOshima from '../images/amamioshima.jpg'
+import amamiOshima from '../images/amamioshima.jpg'
 
   const UnescoObject = [
     {
@@ -216,7 +216,7 @@ import shirakawagoImage from '../images/shirakawago.jpg'
       prefecture: 'Kagoshima and Okianwa',
       latitude: 16.6,
       longitude: 16.6,
-      // img: amamiOshima,
+      img: amamiOshima,
       dateAdded: '2019',
       shortDescription: 'More Islands. MORE MORE MORE!'
     },
