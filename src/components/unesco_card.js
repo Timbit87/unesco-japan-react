@@ -1,11 +1,11 @@
 import React from 'react';
 import '../index.css';
+import App from '../App'
 import UnescoObject from './unesco_object'
 
-function UnescoCard() {
+function UnescoCard({site}) {
   return (
-    UnescoObject.map((site, index) =>
-    <div className='medium-card' key={index}>
+    <div className='medium-card'>
       <img src={site.img} alt={site.name}></img>
       <div className='medium-card-content'>
         <h1>{site.name}</h1>
@@ -13,7 +13,7 @@ function UnescoCard() {
         <p>{site.shortDescription}</p>
       </div>
     </div>
-  ))
+  )
 }
 
 export default UnescoCard;
