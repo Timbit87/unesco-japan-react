@@ -1,7 +1,5 @@
 import React from 'react';
 import '../index.css';
-import App from '../App'
-import UnescoObject from './unesco_object'
 
 function UnescoCard({site}) {
   return (

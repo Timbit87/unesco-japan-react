@@ -9,8 +9,9 @@ import '../App.css'
 const Map = () => {
   const mapRef = useRef()
   const mapContainerRef = useRef()
+  const apiKey = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
   useEffect(() => {
-    mapboxgl.accessToken = 'no'
+    mapboxgl.accessToken = apiKey
     mapRef.current = new mapboxgl.Map({
       container: mapContainerRef.current,
       style: 'mapbox://styles/mapbox/streets-v11',
