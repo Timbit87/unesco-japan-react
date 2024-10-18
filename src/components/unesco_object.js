@@ -2,6 +2,27 @@ import bombDomeImage from '../images/bomb-dome.jpg'
 import todaijiImage from '../images/Todai-ji.jpg'
 import shirakawagoImage from '../images/shirakawago.jpg'
 import amamiOshima from '../images/amamioshima.jpg'
+import nikko from '../images/Nikko.jpg'
+import itsukushima from '../images/Itsukushima-Shrine.jpg'
+import shiretoko from '../images/Shiretoko.jpg'
+import yakushima from '../images/Yakushima.jpg'
+import himejiCastle from '../images/Himeji-Castle.jpg'
+import shirakamiSanchi from '../images/Shirakami-sanchi.jpg'
+import horyuji from "../images/horyu-ji.jpg"
+import byodoin from '../images/byodoin.jpg'
+import fuji from '../images/fuji.jpg'
+import ginzan from '../images/ginzan.jpg'
+import gunkanjima from '../images/gunkanjima.jpg'
+import hiraizumi from '../images/hiraizumi.jpg'
+import jomon from '../images/jomon.jpg'
+import leCorbusier from '../images/le-corbusier.jpg'
+import munakata from '../images/munakata.jpg'
+import nachiWaterfall from '../images/nachi-waterfall.jpg'
+import nagasakiGod from '../images/nagasaki-god.jpg'
+import ogasawara from '../images/ogasawara.jpg'
+import okinawa from '../images/Okinawa.jpg'
+import tombs from '../images/tombs.jpg'
+import tomiokaSilk from '../images/tomioka-silk.jpg'
 
   const UnescoObject = [
     {
@@ -38,7 +59,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: "Hiroshima",
       latitude: 34.295833,
       longitude: 132.319722,
-      img: "placeholder",
+      img: itsukushima,
       dateAdded: '1996',
       shortDescription: 'Itsukushima Jinja is amazing. Unlike Joel.'
     },
@@ -47,7 +68,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Hyogo',
       latitude: 12,
       longitude: 12,
-      img: "placeholder",
+      img: himejiCastle,
       dateAdded: '1993',
       shortDescription: 'Himeji Castle is the most amazing castle still standing.'
     },
@@ -56,7 +77,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Kagoshima',
       latitude: 12,
       longitude: 12,
-      img: 'placeholder',
+      img: yakushima,
       dateAdded: '1993',
       shortDescription: "Yakushima, not to be confused with Yakuzashima, is an island."
     },
@@ -65,7 +86,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Aomori & Akita',
       latitude: 14,
       longitude: 14,
-      img: 'placeholder',
+      img: shirakamiSanchi,
       dateAdded: '1993',
       shortDescription: 'Some mountains yo.'
     },
@@ -74,7 +95,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Tochigi',
       latitude: 28,
       longitude: 28,
-      img: 'placeholder',
+      img: nikko,
       dateAdded: '1999',
       shortDescription: '103 Temples and structures in a natural setting'
     },
@@ -83,7 +104,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Hokkaido',
       latitude: 60,
       longitude: 60,
-      img: 'placeholder',
+      img: shiretoko,
       dateAdded: '2005',
       shortDescription: 'Natural nature park in Hokkaido'
     },
@@ -92,7 +113,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Nara',
       latitude: 55,
       longitude: 55,
-      img: 'placeholder',
+      img: horyuji,
       dateAdded: '1993',
       shortDescription: 'A bunch of angry gods dude',
     },
@@ -101,7 +122,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Kyoto and Shiga',
       latitude: 23,
       longitude: 23,
-      img: 'placeholder',
+      img: byodoin,
       dateAdded: '1994',
       shortDescription: 'The Kinkaku-jis and shit',
     },
@@ -110,7 +131,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Okinawa',
       latitude: 17,
       longitude: 17,
-      img: 'placeholder',
+      img: okinawa,
       dateAdded: '2000',
       shortDescription: 'Okinawan stuff',
     },
@@ -119,7 +140,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Mie, Nara, and Wakayama',
       latitude: 9,
       longitude: 9,
-      img: 'placeholder',
+      img: nachiWaterfall,
       dateAdded: '2004',
       shortDescription: 'Lots of Buddhist stuff here folks',
     },
@@ -128,7 +149,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Shimane',
       latitude: 1,
       longitude: 1,
-      img: 'placeholder',
+      img: ginzan,
       dateAdded: '2007',
       shortDescription: 'No silver left sadly',
     },
@@ -137,7 +158,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Tokyo',
       latitude: 23,
       longitude: 23,
-      img: 'placeholder',
+      img: ogasawara,
       dateAdded: '2011',
       shortDescription: "I don't know why this was added."
     },
@@ -146,7 +167,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Iwate',
       latitude: 27,
       longitude: 27,
-      img: 'placeholder',
+      img: hiraizumi,
       dateAdded: '2011',
       shortDescription: 'Literally no idea',
     },
@@ -164,7 +185,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Gunma',
       latitude: 60,
       longitude: 60,
-      img: 'placeholder',
+      img: fuji,
       dateAdded: '2014',
       shortDescription: 'A little worm told me how to make a gun. It fires worms'
     },
@@ -173,7 +194,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Fukuoka, Saga, Nagasaki, Kumamoto, Kagoshima, Yamaguchi, Iwate, and Shizuoka',
       latitude: 23,
       longitude: 23,
-      img: 'placeholder',
+      img: gunkanjima,
       dateAdded: '2015',
       shortDescription: 'ROCK AND STONE',
     },
@@ -182,7 +203,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Tokyo',
       latitude: 33,
       longitude: 33,
-      img: 'placeholder',
+      img: leCorbusier,
       dateAdded: '2016',
       shortDescription: 'A frog?'
     },
@@ -191,7 +212,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Fukuoka',
       latitude: 36,
       longitude: 36,
-      img: 'placeholder',
+      img: munakata,
       dateAdded: '2017',
       shortDescription: "Can you swim to these? I don't know."
     },
@@ -200,7 +221,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Nagasaki and Kumamoto',
       latitude: 44,
       longitude: 44,
-      img: 'placeholder',
+      img: nagasakiGod,
       dateAdded: '2018',
       shortDescription: "HARK! THERE IS A GOD IN THESE HILLS!"
     },
@@ -209,7 +230,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Osaka',
       latitude: 23.3,
       longitude: 23.3,
-      img: 'placeholder',
+      img: tombs,
       dateAdded: '2019',
       shortDescription: "I love a big mound"
     },
@@ -227,7 +248,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Hokkaido, Aomori, Iwate, and Akita',
       latitude: 28.9,
       longitude: 28.9,
-      img: 'placeholder',
+      img: jomon,
       dateAdded: '2021',
       shortDescription: 'CAN YOU SMELL WHAT THE ROCK IS COOKING YOU JOMONBRI'
     },
@@ -236,7 +257,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: "Niigata",
       latitude: 66.6,
       longitude: 66.6,
-      img: 'placeholder',
+      img: ginzan,
       dateAdded: '2024',
       shortDescription: "I LIKE GOLD"
     }
