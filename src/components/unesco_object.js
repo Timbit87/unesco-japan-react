@@ -39,8 +39,8 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
       prefecture: 'Gifu and Toyama',
       latitude: 35.1615,
       longitude: 136.5354,
-      altLat: 136.568,
-      altLong: 36.2532,
+      altLat: 36.2532,
+      altLong: 136.568,
       img: shirakawagoImage,
       dateAdded: '1995',
       shortDescription: 'Shirakawa-go is incredibly beautiful. Fuck Joel.'
@@ -66,8 +66,8 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: 'Himeji Castle',
       prefecture: 'Hyogo',
-      latitude: 12,
-      longitude: 12,
+      latitude: 34.839444,
+      longitude: 134.693889,
       img: himejiCastle,
       dateAdded: '1993',
       shortDescription: 'Himeji Castle is the most amazing castle still standing.'
@@ -75,8 +75,8 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: 'Yakushima Island',
       prefecture: 'Kagoshima',
-      latitude: 12,
-      longitude: 12,
+      latitude: 30.343889,
+      longitude: 130.523889,
       img: yakushima,
       dateAdded: '1993',
       shortDescription: "Yakushima, not to be confused with Yakuzashima, is an island."
@@ -84,8 +84,8 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: 'Shirakami-Sanchi',
       prefecture: 'Aomori & Akita',
-      latitude: 14,
-      longitude: 14,
+      latitude: 40.47,
+      longitude: 140.13,
       img: shirakamiSanchi,
       dateAdded: '1993',
       shortDescription: 'Some mountains yo.'
@@ -93,8 +93,8 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: 'Shrines and Temples of Nikko',
       prefecture: 'Tochigi',
-      latitude: 28,
-      longitude: 28,
+      latitude: 36.7565,
+      longitude: 139.5994,
       img: nikko,
       dateAdded: '1999',
       shortDescription: '103 Temples and structures in a natural setting'
@@ -102,8 +102,8 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: 'Shiretoko National Park',
       prefecture: 'Hokkaido',
-      latitude: 60,
-      longitude: 60,
+      latitude: 44.1,
+      longitude: 145.183333,
       img: shiretoko,
       dateAdded: '2005',
       shortDescription: 'Natural nature park in Hokkaido'
@@ -111,8 +111,8 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: 'Buddhist Monuments in the Horyu-ji Area',
       prefecture: 'Nara',
-      latitude: 55,
-      longitude: 55,
+      latitude: 34.616667,
+      longitude: 135.733333,
       img: horyuji,
       dateAdded: '1993',
       shortDescription: 'A bunch of angry gods dude',
@@ -129,8 +129,8 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: 'Gusuku Sites and Related Properties of the Kingdom of Ryukyu',
       prefecture: 'Okinawa',
-      latitude: 17,
-      longitude: 17,
+      latitude: 26.208611,
+      longitude: 127.682778,
       img: okinawa,
       dateAdded: '2000',
       shortDescription: 'Okinawan stuff',
@@ -147,8 +147,8 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: 'Iwami Ginzan Silver Mine and its Cultural Landscape',
       prefecture: 'Shimane',
-      latitude: 1,
-      longitude: 1,
+      latitude: 35.107222,
+      longitude: 132.4375,
       img: ginzan,
       dateAdded: '2007',
       shortDescription: 'No silver left sadly',
@@ -165,8 +165,8 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: 'Hiraizumi - Temples, Gardens, and Archaeological Sites Representing the Buddhist Pure Land',
       prefecture: 'Iwate',
-      latitude: 27,
-      longitude: 27,
+      latitude: 39.001111,
+      longitude: 141.107778,
       img: hiraizumi,
       dateAdded: '2011',
       shortDescription: 'Literally no idea',
@@ -174,8 +174,8 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: 'Fujisan, Sacred Place and Source of Artistic Inspiration',
       prefecture: 'Yamanashi and Shizuoka',
-      latitude: 50,
-      longitude: 50,
+      latitude: 35.360833,
+      longitude: 138.7275,
       img: 'placeholder',
       dateAdded: '2013',
       shortDescription: "A nice looking triangle, that's for sure",
@@ -183,8 +183,8 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: 'Tomioka Silk Mill and Related Sites',
       prefecture: 'Gunma',
-      latitude: 60,
-      longitude: 60,
+      latitude: 36.255278,
+      longitude: 138.887778,
       img: fuji,
       dateAdded: '2014',
       shortDescription: 'A little worm told me how to make a gun. It fires worms'
@@ -201,8 +201,8 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: 'The Architectural Work of Le Corbusier',
       prefecture: 'Tokyo',
-      latitude: 33,
-      longitude: 33,
+      latitude: 35.715278,
+      longitude: 139.775833,
       img: leCorbusier,
       dateAdded: '2016',
       shortDescription: 'A frog?'
@@ -210,8 +210,8 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: 'Sacred Island of Okinoshima and Associated Sites in the Munakata Region',
       prefecture: 'Fukuoka',
-      latitude: 36,
-      longitude: 36,
+      latitude: 34.245,
+      longitude: 130.105556,
       img: munakata,
       dateAdded: '2017',
       shortDescription: "Can you swim to these? I don't know."
@@ -255,8 +255,8 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: "Sado Island Gold Mines",
       prefecture: "Niigata",
-      latitude: 66.6,
-      longitude: 66.6,
+      latitude: 38.041619,
+      longitude: 138.255881,
       img: ginzan,
       dateAdded: '2024',
       shortDescription: "I LIKE GOLD"
