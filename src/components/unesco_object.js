@@ -30,6 +30,16 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
       prefecture: 'Nara',
       latitude: 34.685,
       longitude: 135.85,
+      coordinates: [
+        { title: "Todai-Ji", longitude: 34.689167, latitude: 135.839722 },
+        { title: "Kofuku-Ji", longitude: 34.68325, latitude: 135.83117 },
+        { title: "Kasuga-Taisha", longitude: 34.681389, latitude: 135.848333 },
+        { title: "Gango-Ji", longitude: 34.677803, latitude: 135.831356 },
+        { title: "Yakushi-Ji", longitude: 34.668356, latitude: 135.784311 },
+        { title: "Toshodai-Ji", longitude: 34.675586, latitude: 135.784833 },
+        { title: "Heijo Palace", longitude: 34.691111, latitude: 135.795556 },
+        { title: "Kasugayama Primeval Forest", longitude: 34.68220, latitude: 135.85833 },
+      ],
       img: todaijiImage,
       dateAdded: '1998',
       shortDescription: 'Todai-ji is a temple located in Nara. Get fucked.'
@@ -39,8 +49,11 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
       prefecture: 'Gifu and Toyama',
       latitude: 35.1615,
       longitude: 136.5354,
-      altLat: 36.2532,
-      altLong: 136.568,
+      coordinates: [
+        { title: 'Suganuma Gassho Village', longitude: 36.40423, latitude: 136.88645 },
+        { title: 'Shirakawa-Go', longitude: 36.25797, latitude: 136.90626 },
+        { title: 'Ainokura Gassho Village', longitude: 36.42603, latitude: 136.93548 }
+      ],
       img: shirakawagoImage,
       dateAdded: '1995',
       shortDescription: 'Shirakawa-go is incredibly beautiful. Fuck Joel.'
@@ -48,8 +61,8 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: 'Atomic Bomb Dome',
       prefecture: 'Hiroshima',
-      latitude: 34.2344,
-      longitude: 132.2713,
+      latitude: 34.395556,
+      longitude: 132.453611,
       img: bombDomeImage,
       dateAdded: '1996',
       shortDescription: 'The bomb dome is what happens when you become friends with Joel'
@@ -95,6 +108,11 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
       prefecture: 'Tochigi',
       latitude: 36.7565,
       longitude: 139.5994,
+      coordinates: [
+        { title: "Futarasan Shrine", latitude: 36.75846, longitude: 139.5964 },
+        { title: "Nikko Toshogu", latitude: 36.75814, longitude: 139.5987 },
+        { title: "Rinno-Ji", latitude: 36.75449, longitude: 139.6007 }
+      ],
       img: nikko,
       dateAdded: '1999',
       shortDescription: '103 Temples and structures in a natural setting'
@@ -113,6 +131,10 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
       prefecture: 'Nara',
       latitude: 34.616667,
       longitude: 135.733333,
+      coordinates: [
+        { title: "Horuji Kondo", latitude: 34.61475, longitude: 135.7342 },
+        { title: "Hoki-Ji", latitude: 34.62295, longitude: 135.7462 }
+      ],
       img: horyuji,
       dateAdded: '1993',
       shortDescription: 'A bunch of angry gods dude',
@@ -122,6 +144,25 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
       prefecture: 'Kyoto and Shiga',
       latitude: 23,
       longitude: 23,
+      coordinates: [
+        { title: "Kamowakeikazuchi Shrine", latitude: 35.060278, longitude: 135.752778 },
+        { title: "Shimogamo Shrine", latitude: 35.038889, longitude: 135.7725 },
+        { title: 'To-Ji', latitude: 34.980556, longitude: 135.747778 },
+        { title: 'Kiyomizu-dera', latitude: 34.995, longitude: 135.785 },
+        { title: 'Enryaku-Ji', latitude: 35.07045, longitude: 135.840925 },
+        { title: 'Daigo-Ji', latitude: 34.950992, longitude: 135.819586 },
+        { title: 'Ninna-Ji', latitude: 35.031008, longitude: 135.713772 },
+        { title: 'Byodo-In', latitude: 34.889292, longitude: 135.807692 },
+        { title: 'Ujigami Shrine', latitude: 34.891944, longitude: 135.811389 },
+        { title: 'Kozan-Ji', latitude: 35.060108, longitude: 135.678569 },
+        { title: 'Saiho-Ji', latitude: 34.991961, longitude: 135.683314 },
+        { title: 'Kinkaku-Ji', latitude: 35.039403, longitude: 135.729364 },
+        { title: 'Ryoan-Ji', latitude: 35.034494, longitude: 135.718253 },
+        { title: 'Nishi Hongan-Ji', latitude: 34.992047, longitude: 135.751614 },
+        { title: 'Nijo Castle', latitude: 35.014156, longitude: 135.7475 },
+        { title: 'Tenryu-Ji', lattiude: 35.015964, longitude: 135.673772 },
+        { title: 'Ginkaku-Ji', latitude: 35.026875, longitude: 135.79825 }
+      ],
       img: byodoin,
       dateAdded: '1994',
       shortDescription: 'The Kinkaku-jis and shit',
@@ -131,6 +172,9 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
       prefecture: 'Okinawa',
       latitude: 26.208611,
       longitude: 127.682778,
+      coordinates: [
+
+      ],
       img: okinawa,
       dateAdded: '2000',
       shortDescription: 'Okinawan stuff',
