@@ -2,6 +2,12 @@ import bombDomeImage from '../images/bomb-dome.jpg'
 import todaijiImage from '../images/Todai-ji.jpg'
 import shirakawagoImage from '../images/shirakawago.jpg'
 import amamiOshima from '../images/amamioshima.jpg'
+import nikko from '../images/Nikko.jpg'
+import itsukushima from '../images/Itsukushima-Shrine.jpg'
+import shiretoko from '../images/Shiretoko.jpg'
+import yakushima from '../images/Yakushima.jpg'
+import himejiCastle from '../images/Himeji-Castle.jpg'
+import shirakamiSanchi from '../images/Shirakami-sanchi.jpg'
 
   const UnescoObject = [
     {
@@ -38,7 +44,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: "Hiroshima",
       latitude: 34.295833,
       longitude: 132.319722,
-      img: "placeholder",
+      img: itsukushima,
       dateAdded: '1996',
       shortDescription: 'Itsukushima Jinja is amazing. Unlike Joel.'
     },
@@ -47,7 +53,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Hyogo',
       latitude: 12,
       longitude: 12,
-      img: "placeholder",
+      img: himejiCastle,
       dateAdded: '1993',
       shortDescription: 'Himeji Castle is the most amazing castle still standing.'
     },
@@ -56,7 +62,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Kagoshima',
       latitude: 12,
       longitude: 12,
-      img: 'placeholder',
+      img: yakushima,
       dateAdded: '1993',
       shortDescription: "Yakushima, not to be confused with Yakuzashima, is an island."
     },
@@ -65,7 +71,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Aomori & Akita',
       latitude: 14,
       longitude: 14,
-      img: 'placeholder',
+      img: shirakamiSanchi,
       dateAdded: '1993',
       shortDescription: 'Some mountains yo.'
     },
@@ -74,7 +80,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Tochigi',
       latitude: 28,
       longitude: 28,
-      img: 'placeholder',
+      img: nikko,
       dateAdded: '1999',
       shortDescription: '103 Temples and structures in a natural setting'
     },
@@ -83,7 +89,7 @@ import amamiOshima from '../images/amamioshima.jpg'
       prefecture: 'Hokkaido',
       latitude: 60,
       longitude: 60,
-      img: 'placeholder',
+      img: shiretoko,
       dateAdded: '2005',
       shortDescription: 'Natural nature park in Hokkaido'
     },
