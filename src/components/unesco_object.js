@@ -8,6 +8,21 @@ import shiretoko from '../images/Shiretoko.jpg'
 import yakushima from '../images/Yakushima.jpg'
 import himejiCastle from '../images/Himeji-Castle.jpg'
 import shirakamiSanchi from '../images/Shirakami-sanchi.jpg'
+import horyuji from "../images/horyu-ji.jpg"
+import byodoin from '../images/byodoin.jpg'
+import fuji from '../images/fuji.jpg'
+import ginzan from '../images/ginzan.jpg'
+import gunkanjima from '../images/gunkanjima.jpg'
+import hiraizumi from '../images/hiraizumi.jpg'
+import jomon from '../images/jomon.jpg'
+import leCorbusier from '../images/le-corbusier.jpg'
+import munakata from '../images/munakata.jpg'
+import nachiWaterfall from '../images/nachi-waterfall.jpg'
+import nagasakiGod from '../images/nagasaki-god.jpg'
+import ogasawara from '../images/ogasawara.jpg'
+import okinawa from '../images/Okinawa.jpg'
+import tombs from '../images/tombs.jpg'
+import tomiokaSilk from '../images/tomioka-silk.jpg'
 
   const UnescoObject = [
     {
@@ -98,7 +113,7 @@ import shirakamiSanchi from '../images/Shirakami-sanchi.jpg'
       prefecture: 'Nara',
       latitude: 55,
       longitude: 55,
-      img: 'placeholder',
+      img: horyuji,
       dateAdded: '1993',
       shortDescription: 'A bunch of angry gods dude',
     },
@@ -107,7 +122,7 @@ import shirakamiSanchi from '../images/Shirakami-sanchi.jpg'
       prefecture: 'Kyoto and Shiga',
       latitude: 23,
       longitude: 23,
-      img: 'placeholder',
+      img: byodoin,
       dateAdded: '1994',
       shortDescription: 'The Kinkaku-jis and shit',
     },
@@ -116,7 +131,7 @@ import shirakamiSanchi from '../images/Shirakami-sanchi.jpg'
       prefecture: 'Okinawa',
       latitude: 17,
       longitude: 17,
-      img: 'placeholder',
+      img: okinawa,
       dateAdded: '2000',
       shortDescription: 'Okinawan stuff',
     },
@@ -125,7 +140,7 @@ import shirakamiSanchi from '../images/Shirakami-sanchi.jpg'
       prefecture: 'Mie, Nara, and Wakayama',
       latitude: 9,
       longitude: 9,
-      img: 'placeholder',
+      img: nachiWaterfall,
       dateAdded: '2004',
       shortDescription: 'Lots of Buddhist stuff here folks',
     },
@@ -134,7 +149,7 @@ import shirakamiSanchi from '../images/Shirakami-sanchi.jpg'
       prefecture: 'Shimane',
       latitude: 1,
       longitude: 1,
-      img: 'placeholder',
+      img: ginzan,
       dateAdded: '2007',
       shortDescription: 'No silver left sadly',
     },
@@ -143,7 +158,7 @@ import shirakamiSanchi from '../images/Shirakami-sanchi.jpg'
       prefecture: 'Tokyo',
       latitude: 23,
       longitude: 23,
-      img: 'placeholder',
+      img: ogasawara,
       dateAdded: '2011',
       shortDescription: "I don't know why this was added."
     },
@@ -152,7 +167,7 @@ import shirakamiSanchi from '../images/Shirakami-sanchi.jpg'
       prefecture: 'Iwate',
       latitude: 27,
       longitude: 27,
-      img: 'placeholder',
+      img: hiraizumi,
       dateAdded: '2011',
       shortDescription: 'Literally no idea',
     },
@@ -170,7 +185,7 @@ import shirakamiSanchi from '../images/Shirakami-sanchi.jpg'
       prefecture: 'Gunma',
       latitude: 60,
       longitude: 60,
-      img: 'placeholder',
+      img: fuji,
       dateAdded: '2014',
       shortDescription: 'A little worm told me how to make a gun. It fires worms'
     },
@@ -179,7 +194,7 @@ import shirakamiSanchi from '../images/Shirakami-sanchi.jpg'
       prefecture: 'Fukuoka, Saga, Nagasaki, Kumamoto, Kagoshima, Yamaguchi, Iwate, and Shizuoka',
       latitude: 23,
       longitude: 23,
-      img: 'placeholder',
+      img: gunkanjima,
       dateAdded: '2015',
       shortDescription: 'ROCK AND STONE',
     },
@@ -188,7 +203,7 @@ import shirakamiSanchi from '../images/Shirakami-sanchi.jpg'
       prefecture: 'Tokyo',
       latitude: 33,
       longitude: 33,
-      img: 'placeholder',
+      img: leCorbusier,
       dateAdded: '2016',
       shortDescription: 'A frog?'
     },
@@ -197,7 +212,7 @@ import shirakamiSanchi from '../images/Shirakami-sanchi.jpg'
       prefecture: 'Fukuoka',
       latitude: 36,
       longitude: 36,
-      img: 'placeholder',
+      img: munakata,
       dateAdded: '2017',
       shortDescription: "Can you swim to these? I don't know."
     },
@@ -206,7 +221,7 @@ import shirakamiSanchi from '../images/Shirakami-sanchi.jpg'
       prefecture: 'Nagasaki and Kumamoto',
       latitude: 44,
       longitude: 44,
-      img: 'placeholder',
+      img: nagasakiGod,
       dateAdded: '2018',
       shortDescription: "HARK! THERE IS A GOD IN THESE HILLS!"
     },
@@ -215,7 +230,7 @@ import shirakamiSanchi from '../images/Shirakami-sanchi.jpg'
       prefecture: 'Osaka',
       latitude: 23.3,
       longitude: 23.3,
-      img: 'placeholder',
+      img: tombs,
       dateAdded: '2019',
       shortDescription: "I love a big mound"
     },
@@ -233,7 +248,7 @@ import shirakamiSanchi from '../images/Shirakami-sanchi.jpg'
       prefecture: 'Hokkaido, Aomori, Iwate, and Akita',
       latitude: 28.9,
       longitude: 28.9,
-      img: 'placeholder',
+      img: jomon,
       dateAdded: '2021',
       shortDescription: 'CAN YOU SMELL WHAT THE ROCK IS COOKING YOU JOMONBRI'
     },
@@ -242,7 +257,7 @@ import shirakamiSanchi from '../images/Shirakami-sanchi.jpg'
       prefecture: "Niigata",
       latitude: 66.6,
       longitude: 66.6,
-      img: 'placeholder',
+      img: ginzan,
       dateAdded: '2024',
       shortDescription: "I LIKE GOLD"
     }
