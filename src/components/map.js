@@ -2,6 +2,7 @@ import '../index.css'
 import React, { useRef, useEffect } from 'react'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import mapboxgl from 'mapbox-gl'
+import UnescoObject from './unesco_object'
 import '../App.css'
 
 
@@ -19,10 +20,16 @@ const Map = () => {
       zoom: 5,
     });
 
+    UnescoObject.map((site) => {
+      const marker = new mapboxgl.Marker()
+      .setLngLat([site.longitude, site.latitude])
+      .addTo(mapRef.current);
+    });
+
     return () => {
       mapRef.current.remove()
     }
-  }, [])
+  }, [apiKey]);
   return (
     <div id='map-container' ref={mapContainerRef}/>
   )
