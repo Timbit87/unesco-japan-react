@@ -176,7 +176,7 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
       prefecture: 'Yamanashi and Shizuoka',
       latitude: 35.360833,
       longitude: 138.7275,
-      img: 'placeholder',
+      img: fuji,
       dateAdded: '2013',
       shortDescription: "A nice looking triangle, that's for sure",
     },
@@ -185,7 +185,7 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
       prefecture: 'Gunma',
       latitude: 36.255278,
       longitude: 138.887778,
-      img: fuji,
+      img: tomiokaSilk,
       dateAdded: '2014',
       shortDescription: 'A little worm told me how to make a gun. It fires worms'
     },
