@@ -3,12 +3,14 @@ import './index.css'
 import UnescoCard from './components/unesco_card'
 import UnescoObject from './components/unesco_object'
 import Map from './components/map'
+import UseWikipedia from './components/wikipedia_api'
 import 'mapbox-gl/dist/mapbox-gl.css'
 
 
 function App() {
   return (
     <div className="App">
+
       <div className='map-container col-8'>
       <Map />
       </div>

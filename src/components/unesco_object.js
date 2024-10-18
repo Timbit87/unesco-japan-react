@@ -7,8 +7,8 @@ import amamiOshima from '../images/amamioshima.jpg'
     {
       name: 'Historic Monuments of Ancient Nara',
       prefecture: 'Nara',
-      latitude: 135.85,
-      longitude: 34.685,
+      latitude: 34.685,
+      longitude: 135.85,
       img: todaijiImage,
       dateAdded: '1998',
       shortDescription: 'Todai-ji is a temple located in Nara. Get fucked.'
@@ -16,8 +16,8 @@ import amamiOshima from '../images/amamioshima.jpg'
     {
       name: 'Shirakawa-go and Gokayama',
       prefecture: 'Gifu and Toyama',
-      latitude: 136.5354,
-      longitude: 35.1615,
+      latitude: 35.1615,
+      longitude: 136.5354,
       altLat: 136.568,
       altLong: 36.2532,
       img: shirakawagoImage,
@@ -27,8 +27,8 @@ import amamiOshima from '../images/amamioshima.jpg'
     {
       name: 'Atomic Bomb Dome',
       prefecture: 'Hiroshima',
-      latitude: 132.2713,
-      longitude: 34.2344,
+      latitude: 34.2344,
+      longitude: 132.2713,
       img: bombDomeImage,
       dateAdded: '1996',
       shortDescription: 'The bomb dome is what happens when you become friends with Joel'
