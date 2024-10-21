@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Button from 'react-bootstrap/Button';
@@ -13,7 +13,11 @@ function UnescoCard({site, addMarker}) {
         <h3>{site.prefecture}</h3>
         <p>{site.shortDescription}</p>
       </div>
-      <Button className="unesco-button" variant="primary" onClick={() => addMarker(site)}>Click for more</Button>
+      <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
+      <Button className="unesco-button" variant="primary" onClick={() => addMarker(site)}>Zoom to</Button>
+      <Button className="unesco-button" variant="primary">Find Directions</Button>
+      <Button className="unesco-button" variant="primary">Find out more</Button>
+      </div>
     </div>
     </div>
   )

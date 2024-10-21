@@ -53,7 +53,7 @@ const Map = ({setAddMarker}) => {
       setMarkers([marker])
       mapRef.current.flyTo({
         center: [site.longitude, site.latitude],
-        zoom: 8,
+        zoom: 14,
         speed: 1.2,
         curve: 1,
         essential: true,
