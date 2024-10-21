@@ -42,7 +42,7 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
       ],
       img: todaijiImage,
       dateAdded: '1998',
-      shortDescription: 'Todai-ji is a temple located in Nara. Get fucked.'
+      shortDescription: 'Todai-ji is a temple located in Nara'
     },
     {
       name: 'Shirakawa-go and Gokayama',
@@ -56,7 +56,7 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
       ],
       img: shirakawagoImage,
       dateAdded: '1995',
-      shortDescription: 'Shirakawa-go is incredibly beautiful. Fuck Joel.'
+      shortDescription: 'Shirakawa-go is incredibly beautiful.'
     },
     {
       name: 'Atomic Bomb Dome',
@@ -165,7 +165,7 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
       ],
       img: byodoin,
       dateAdded: '1994',
-      shortDescription: 'The Kinkaku-jis and shit',
+      shortDescription: 'The Kinkaku-jis.',
     },
     {
       name: 'Gusuku Sites and Related Properties of the Kingdom of Ryukyu',
