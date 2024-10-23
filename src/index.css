@@ -44,3 +44,7 @@ code {
   height: calc(100vh - 10px);
   width: 100%;
 }
+
+#map-popup {
+  
+}
