@@ -15,21 +15,22 @@ const Map = ({setAddMarker}) => {
   const [markers, setMarkers] = useState([])
   const apiKey = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
-  const features = UnescoObject.flatMap(site => {
+  const features = UnescoObject.flatMap((site) => {
     const mainFeature ={
       type: 'Feature',
       properties: {
-        title: site.title,
-        description: UnescoObject.shortDescription,
-        img: site.img,
+        title: site.name,
+        description: site.shortDescription,
+        img: site.cardImg,
         prefecture: site.prefecture,
       },
       geometry: {
         type: 'Point',
-        coordinates: [site.longitude, site.latitude]
+        coordinates: [site.coordinates[0].longitude, site.coordinates[0].latitude]
       },
-    }
-    const coordinateFeatures = site.coordinates ? site.coordinates.map(coord => ({
+    };
+
+    const coordinateFeatures = site.coordinates.map(coord => ({
       type: 'Feature',
       properties: {
         title: coord.title,
@@ -38,13 +39,14 @@ const Map = ({setAddMarker}) => {
       geometry: {
         type: 'Point',
         coordinates: [coord.longitude, coord.latitude]
-      }
-    })) : [];
+      },
+    }));
+    return [mainFeature, ...coordinateFeatures];
   });
 
   const geojsonData = {
     type: 'FeatureCollection',
-    feature: features
+    features: features,
   };
 
   useEffect(() => {
@@ -55,24 +57,26 @@ const Map = ({setAddMarker}) => {
       center: [138.2529, 39.5 ],
       zoom: 5,
     });
+
     mapRef.current.on('load', () => {
-      const initialMarkers = UnescoObject.map((site) => {
+      const initialMarkers = UnescoObject.flatMap(site =>
+        site.coordinates.map(coord => {
         const marker = new mapboxgl.Marker()
-        .setLngLat([site.longitude, site.latitude])
+        .setLngLat([coord.longitude, coord.latitude])
         .setPopup(
           new mapboxgl.Popup({ offset: 25 })
         .setHTML(`
           <div id='map-popup'>
-          <img src=${site.img} style="width: 100%; height: auto;" alt="${site.name}" />
-          <h3>${site.name}</h3>
+          <img src=${site.img} style="width: 100%; height: auto;" alt="${site.cardImg}" />
+          <h3>${coord.title}</h3>
           <p>${site.prefecture}</p>
           </div>
         `)
-
         )
       .addTo(mapRef.current);
       return marker;
-    });
+      })
+    );
 
     setMarkers(initialMarkers);
 
@@ -80,18 +84,18 @@ const Map = ({setAddMarker}) => {
       markers.forEach(marker => marker.remove());
       setMarkers([]);
       const marker = new mapboxgl.Marker()
-      .setLngLat([site.longitude, site.latitude])
+      .setLngLat([site.coordinates.longitude, site.coordinates.latitude])
       .addTo(mapRef.current);
 
       setMarkers([marker])
       mapRef.current.flyTo({
-        center: [site.longitude, site.latitude],
+        center: [site.coordinates.longitude, site.coordinates.latitude],
         zoom: 14,
         speed: 1.2,
         curve: 1,
         essential: true,
-      })
-    })
+      });
+    });
 
     mapRef.current.addSource('unescoSites', {
       type: 'geojson',
@@ -121,9 +125,9 @@ const Map = ({setAddMarker}) => {
           30,
           750,
           40
-        ]
-      }
-      })
+        ],
+      },
+      });
     });
 
     return () => {
@@ -134,6 +138,6 @@ const Map = ({setAddMarker}) => {
   return (
     <div id='map-container' ref={mapContainerRef}/>
   )
-}
+};
 
 export default Map;
