@@ -29,7 +29,7 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
       name: 'Historic Monuments of Ancient Nara',
       prefecture: 'Nara',
       coordinates: [
-        { title: "Todai-Ji", latitude: 34.689167, longitude: 135.839722 },
+        { title: "Todai-Ji", latitude: 34.689167, longitude: 135.839722, img: todaijiImage },
         { title: "Kofuku-Ji", latitude: 34.68325, longitude: 135.83117 },
         { title: "Kasuga-Taisha", latitude: 34.681389, longitude: 135.848333 },
         { title: "Gango-Ji", latitude: 34.677803, longitude: 135.831356 },
