@@ -67,7 +67,7 @@ const Map = ({setAddMarker}) => {
           new mapboxgl.Popup({ offset: 25 })
         .setHTML(`
           <div id='map-popup'>
-          <img src=${site.img} style="width: 100%; height: auto;" alt="${site.cardImg}" />
+          <img src=${coord.img} style="width: 100%; height: auto;" alt=${site.cardImg} />
           <h3>${coord.title}</h3>
           <p>${site.prefecture}</p>
           </div>
