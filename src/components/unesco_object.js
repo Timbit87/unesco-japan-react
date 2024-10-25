@@ -219,7 +219,11 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
       name: 'Hiraizumi - Temples, Gardens, and Archaeological Sites Representing the Buddhist Pure Land',
       prefecture: 'Iwate',
       coordinates: [
-        { title: 'placer', latitude: 39.001111, longitude: 141.107778 }
+        { title: 'Chuson-ji', latitude: 39.001111, longitude: 141.107778 },
+        { title: 'Motsu-ji', latitude: 38.990531, longitude: 141.115457 },
+        { title: 'Kanjizaio-in Ato', latitude: 38.988179, longitude: 141.110375 },
+        { title: 'Muryoko-in Ato', latitude: 38.99293, longitude: 141.115888 },
+        { title: 'Mount Kinkeisan', latitude: 38.99335, longitude: 141.109202 },
       ],
       cardImg: hiraizumi,
       dateAdded: '2011',
