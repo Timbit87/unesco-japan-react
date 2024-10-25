@@ -16,7 +16,7 @@ import gunkanjima from '../images/gunkanjima.jpg'
 import hiraizumi from '../images/hiraizumi.jpg'
 import jomon from '../images/jomon.jpg'
 import leCorbusier from '../images/le-corbusier.jpg'
-import munakata from '../images/munakata.jpg'
+import okunoshima from '../images/munakata.jpg'
 import nachiWaterfall from '../images/nachi-waterfall.jpg'
 import nagasakiGod from '../images/nagasaki-god.jpg'
 import ogasawara from '../images/ogasawara.jpg'
@@ -295,8 +295,14 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: 'Sacred Island of Okinoshima and Associated Sites in the Munakata Region',
       prefecture: 'Fukuoka',
-      coordinates: [{ title: 'Sacred Islands', latitude: 34.245, longitude: 130.105556 }],
-      cardImg: munakata,
+      coordinates: [
+        { title: 'Okunoshima', latitude: 34.246761, longitude: 130.10413, img: okunoshima },
+        { title: 'Munakata Taisha - Okitsu-Miya', latitude: 34.241448, longitude: 130.103853, },
+        { title: 'Munakata Taisha - Nakatsu-Miya', latitude: 33.896992, longitude: 130.432222, },
+        { title: 'Munakata Taisha - Hetsu-Miya', latitude: 33.831089, longitude: 130.514347, },
+        { title: 'Tsuyazaki Tumulus Cluster - Shinbaru-Nuyama Tumulus Cluster', latitude: 33.816379, longitude: 130.487752, },
+      ],
+      cardImg: okunoshima,
       dateAdded: '2017',
       shortDescription: "Can you swim to these? I don't know."
     },
