@@ -317,7 +317,10 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: "Mozu-Furuichi Kofun Group: Mounded Tombs of Ancient Japan",
       prefecture: 'Osaka',
-      coordinates: [{ title: 'Mozu-Furuichi', latitude: 23.3, longitude: 23.3 }],
+      coordinates: [
+        { title: 'Mozu Kofungun', latitude: 34.564, longitude: 135.487, img: tombs },
+        { title: 'Furuichi Kofungun', latitude: 34.562778, longitude: 135.609167, },
+      ],
       cardImg: tombs,
       dateAdded: '2019',
       shortDescription: "I love a big mound"
@@ -325,7 +328,13 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: "Amami-Oshima Island, Tokunoshima Island, Northern part of Okinawa Island, and Iriomote Island",
       prefecture: 'Kagoshima and Okianwa',
-      coordinates: [{ title: 'Amami-Oshima', latitude: 16.6, longitude: 16.6 }],
+      coordinates: [
+        { title: 'Amami-Oshima', latitude: 28.279167, longitude: 129.378333 },
+        { title: 'Tokunoshima Island A', latitude: 27.763333, longitude: 128.967222 },
+        { title: 'Tokunoshima Island B', latitude: 27.82, longitude: 128.932222 },
+        { title: 'Iriomote Island', latitude: 24.34, longitude: 123.81 },
+        { title: 'The Northern Part of Okinawa Island', latitude: 26.724722, longitude: 128.22 }
+      ],
       cardImg: amamiOshima,
       dateAdded: '2019',
       shortDescription: 'More Islands. MORE MORE MORE!'
@@ -333,7 +342,17 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: "Jomon Prehistoric Sites in Northern Japan",
       prefecture: 'Hokkaido, Aomori, Iwate, and Akita',
-      coordinates: [{ title: 'Jomon', latitude: 28.9, longitude: 28.9 }],
+      coordinates: [
+        { title: 'Odai Yamamoto I Site', latitude: 41.067288, longitude: 140.554973 },
+        { title: 'Kakinoshima Site', latitude: 41.928861, longitude: 140.9475 },
+        { title: 'Kitakogane Site', latitude: 42.402034, longitude: 140.910648 },
+        { title: 'Tagoyano Shell Mound', latitude: 40.888056, longitude: 140.339167},
+        { title: 'Kamegaoka Stone Age Site', latitude: 40.884894, longitude: 140.339569 },
+        { title: 'Futatsumori Site', latitude: 40.748056, longitude: 141.23 },
+        { title: 'Sannai-Maruyama Site', latitude: 40.810278, longitude: 140.6975 },
+        { title: 'Ofune Site', latitude: 41.957778, longitude:  140.925278 },
+        { title: 'Goshono Site', latitude: 40.197833, longitude: 141.306139 },
+      ],
       cardImg: jomon,
       dateAdded: '2021',
       shortDescription: 'CAN YOU SMELL WHAT THE ROCK IS COOKING YOU JOMONBRI'

@@ -5,11 +5,12 @@ import mapboxgl from 'mapbox-gl'
 import UnescoObject from './unesco_object'
 import Image from 'react-bootstrap/Image'
 import UnescoCard from './unesco_card'
+import UnescoMiniCard from './unesco_mini_card'
 import '../App.css'
 
 
 
-const Map = ({setAddMarker}) => {
+const Map = ({setZoomTo, setExpand}) => {
   const mapRef = useRef()
   const mapContainerRef = useRef()
   const [markers, setMarkers] = useState([])
@@ -80,7 +81,7 @@ const Map = ({setAddMarker}) => {
 
     setMarkers(initialMarkers);
 
-    setAddMarker(() => (site)  => {
+    setZoomTo(() => (site)  => {
       markers.forEach(marker => marker.remove());
       setMarkers([]);
       const marker = new mapboxgl.Marker()
@@ -133,7 +134,7 @@ const Map = ({setAddMarker}) => {
     return () => {
       mapRef.current.remove()
     }
-  }, [apiKey, setAddMarker]);
+  }, [apiKey, setZoomTo, setExpand]);
 
   return (
     <div id='map-container' ref={mapContainerRef}/>

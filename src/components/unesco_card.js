@@ -3,7 +3,7 @@ import '../index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Button from 'react-bootstrap/Button';
 
-function UnescoCard({site, addMarker}) {
+function UnescoCard({site, expand}) {
   return (
     <div>
     <div className='medium-card'>
@@ -14,9 +14,7 @@ function UnescoCard({site, addMarker}) {
         <p>{site.shortDescription}</p>
       </div>
       <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
-      <Button className="unesco-button" variant="primary" onClick={() => addMarker(site)}>Zoom to</Button>
-      <Button className="unesco-button" variant="primary">Find Directions</Button>
-      <Button className="unesco-button" variant="primary">Find out more</Button>
+      <Button className="unesco-button" variant="primary" onClick={() => expand(site)}>Expand</Button>
       </div>
     </div>
     </div>
