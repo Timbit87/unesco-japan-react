@@ -287,7 +287,7 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: 'The Architectural Work of Le Corbusier',
       prefecture: 'Tokyo',
-      coordinates: [{ title: 'placer', latitude: 35.715278, longitude: 139.775833, img: leCorbusier }],
+      coordinates: [{ title: 'The Architectural Work of Le Corbusier', latitude: 35.715278, longitude: 139.775833, img: leCorbusier }],
       cardImg: leCorbusier,
       dateAdded: '2016',
       shortDescription: 'A frog?'
@@ -309,7 +309,20 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: "Hidden Christian Sites in the Nagasaki Region",
       prefecture: 'Nagasaki and Kumamoto',
-      coordinates: [{ title: 'Christain Site', latitude: 44, longitude: 44 }],
+      coordinates: [
+        { title: 'Remains of Hara Castle', latitude: 32.633306, longitude: 130.256472 },
+        { title: 'Kasuga Village and Sacred Places in Hirado (Kasuga Village and Mt. Yasumandake', latitude: 33.336667, longitude: 129.465833 },
+        { title: 'Kasuga Village and Sacred Places in Hirado (Nakaenoshima Island', latitude: 33.37325, longitude: 129.465222 },
+        { title: 'Sakitsu Village in Amakusa', latitude: 32.3124, longitude: 130.0258 },
+        { title: 'Shitsu Village in Sotome', latitude: 32.845261382890186, longitude: 129.70056360974158 },
+        { title: 'Ono Village in Sotome', latitude: 32.87143752912111, longitude: 129.68709720973578 },
+        { title: 'Villages on Kuroshima Island', latitude: 24.239576433196202, longitude: 124.01036342230448 },
+        { title: 'Remains of Villages on Nozaki Island', latitude: 33.16623015655337, longitude: 129.13093784145045 },
+        { title: 'Villages on Kashiragashima Island', latitude: 33.013509683625855, longitude: 129.18285728875077 },
+        { title: 'Villages on Hisaka Island', latitude: 32.794608355946885, longitude: 128.87493715105362 },
+        { title: 'Egami Village on Naru Island (Egami Church and its Surroundings)', latitude: 32.855256, longitude: 128.904077 },
+        { title: 'Oura Cathedral', latitude: 32.734106, longitude: 129.870236 },
+      ],
       cardImg: nagasakiGod,
       dateAdded: '2018',
       shortDescription: "HARK! THERE IS A GOD IN THESE HILLS!"
