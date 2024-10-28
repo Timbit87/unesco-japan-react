@@ -10,16 +10,17 @@ import 'mapbox-gl/dist/mapbox-gl.css'
 
 
 function App() {
-  const [addMarker, setAddMarker, ZoomTo] = React.useState(() => () => {});
+  const [addMarker, setAddMarker ] = React.useState(() => () => {});
+  const [ zoomTo, setZoomTo ] = React.useState(() => () => {});
   return (
     <div className="App">
 
       <div className='map-container col-8'>
-      <Map setAddMarker={setAddMarker} ZoomTo={ZoomTo} />
+      <Map setAddMarker={setAddMarker} setZoomTo={setZoomTo} />
       </div>
       <div className="flex-row flex-nowrap overflow-auto col-4">
         {UnescoObject.map((site) =>
-          <UnescoCard key={site.id} site={site} addMarker={addMarker}/>
+          <UnescoCard key={site.id} site={site} addMarker={addMarker} zoomTo={zoomTo} />
         )}
 
       </div>
