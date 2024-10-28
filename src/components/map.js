@@ -55,8 +55,8 @@ const Map = ({setZoomTo, setExpand}) => {
     mapRef.current = new mapboxgl.Map({
       container: mapContainerRef.current,
       style: 'mapbox://styles/mapbox/streets-v11',
-      center: [138.2529, 39.5 ],
-      zoom: 5,
+      center: [136.90779722664405, 35.154237836483645 ],
+      zoom: 4.5,
     });
 
     mapRef.current.on('load', () => {

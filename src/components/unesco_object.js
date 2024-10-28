@@ -362,7 +362,7 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
         { title: 'Tagoyano Shell Mound', latitude: 40.888056, longitude: 140.339167},
         { title: 'Kamegaoka Stone Age Site', latitude: 40.884894, longitude: 140.339569 },
         { title: 'Futatsumori Site', latitude: 40.748056, longitude: 141.23 },
-        { title: 'Sannai-Maruyama Site', latitude: 40.810278, longitude: 140.6975 },
+        { title: 'Sannai-Maruyama Site', latitude: 40.810278, longitude: 140.6975, img: jomon },
         { title: 'Ofune Site', latitude: 41.957778, longitude:  140.925278 },
         { title: 'Goshono Site', latitude: 40.197833, longitude: 141.306139 },
       ],
@@ -373,7 +373,7 @@ import tomiokaSilk from '../images/tomioka-silk.jpg'
     {
       name: "Sado Island Gold Mines",
       prefecture: "Niigata",
-      coordinates: [{ title: 'Sado Island Gold Mines', latitude: 38.041619, longitude: 138.255881 }],
+      coordinates: [{ title: 'Sado Island Gold Mines', latitude: 38.041619, longitude: 138.255881, img: ginzan }],
       cardImg: ginzan,
       dateAdded: '2024',
       shortDescription: "I LIKE GOLD"
