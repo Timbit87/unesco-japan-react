@@ -1,8 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Button from 'react-bootstrap/Button';
-import Expand from './expand'
 
 function UnescoMiniCard({card, zoomTo}) {
   return (
@@ -11,7 +10,7 @@ function UnescoMiniCard({card, zoomTo}) {
   <div class="mini-card-infos">
     <h2>{card.title}</h2>
     <p></p>
-    <Button className="unesco-button" variant="primary" onClick={() => zoomTo(card)}>Zoom to</Button>
+    <Button className="unesco-button" variant="primary" onClick={ () => zoomTo(card)}>Zoom to</Button>
   </div>
 </div>
   )

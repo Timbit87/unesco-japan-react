@@ -1,13 +1,13 @@
 import React from 'react';
 import UnescoMiniCard from './unesco_mini_card'
+import Map from './map'
 import UnescoObject from './unesco_object'
 
-function Expand( {site} ) {
+function Expand( {site, zoomTo} ) {
   return (
     <>
       {site.coordinates.map((coord) => (
-        console.log(coord),
-        <UnescoMiniCard key={coord.id} card={coord}/>
+        <UnescoMiniCard key={coord.id} card={coord} zoomTo={zoomTo}/>
       ))}
     </>
   );

@@ -81,22 +81,25 @@ const Map = ({setZoomTo, setExpand}) => {
 
     setMarkers(initialMarkers);
 
-    setZoomTo(() => (site)  => {
+    const zoomTo = (card)  => {
       markers.forEach(marker => marker.remove());
       setMarkers([]);
+
       const marker = new mapboxgl.Marker()
-      .setLngLat([site.coordinates.longitude, site.coordinates.latitude])
+      .setLngLat([card.longitude, card.latitude])
       .addTo(mapRef.current);
 
       setMarkers([marker])
       mapRef.current.flyTo({
-        center: [site.coordinates.longitude, site.coordinates.latitude],
+        center: [card.longitude, card.latitude],
         zoom: 14,
         speed: 1.2,
         curve: 1,
         essential: true,
       });
-    });
+    };
+
+    setZoomTo(() => zoomTo );
 
     mapRef.current.addSource('unescoSites', {
       type: 'geojson',
@@ -134,7 +137,7 @@ const Map = ({setZoomTo, setExpand}) => {
     return () => {
       mapRef.current.remove()
     }
-  }, [apiKey, setZoomTo, setExpand]);
+  }, [apiKey, setZoomTo ]);
 
   return (
     <div id='map-container' ref={mapContainerRef}/>
