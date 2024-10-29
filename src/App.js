@@ -6,6 +6,7 @@ import UnescoMiniCard from './components/unesco_mini_card'
 import UnescoObject from './components/unesco_object'
 import Map from './components/map'
 import UseWikipedia from './components/wikipedia_api'
+import Expand from './components/expand'
 import 'mapbox-gl/dist/mapbox-gl.css'
 
 
