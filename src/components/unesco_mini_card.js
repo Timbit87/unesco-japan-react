@@ -10,7 +10,7 @@ function UnescoMiniCard({card, zoomTo}) {
   <div class="mini-card-infos">
     <h2>{card.title}</h2>
     <p></p>
-    <Button className="unesco-button" variant="primary" onClick={ () => zoomTo(card)}>Zoom to</Button>
+    <Button className="unesco-button" variant="primary" onClick={ () => zoomTo(card) }>Zoom to</Button>
   </div>
 </div>
   )

@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Button from 'react-bootstrap/Button';
 import Expand from './expand'
 
-function UnescoCard({site}) {
+function UnescoCard({site, zoomTo}) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleExpand = () => {
@@ -25,7 +25,7 @@ function UnescoCard({site}) {
         {isExpanded ? 'Collapse' : 'Expand' }</Button>
       </div>
     </div>
-    { isExpanded && <Expand site={site} />} { /* Render Expand conditionally */}
+    { isExpanded && <Expand site={site} zoomTo={zoomTo} />}
     </div>
   )
 }

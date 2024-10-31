@@ -3,9 +3,8 @@ import React, { useRef, useEffect, useState } from 'react'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import mapboxgl from 'mapbox-gl'
 import UnescoObject from './unesco_object'
-import Image from 'react-bootstrap/Image'
 import UnescoCard from './unesco_card'
-import UnescoMiniCard from './unesco_mini_card'
+import Expand from './expand'
 import '../App.css'
 
 
@@ -50,6 +49,24 @@ const Map = ({setZoomTo, setExpand}) => {
     features: features,
   };
 
+  const zoomTo = (card)  => {
+    markers.forEach(marker => marker.remove());
+    setMarkers([]);
+
+    const marker = new mapboxgl.Marker()
+    .setLngLat([card.longitude, card.latitude])
+    .addTo(mapRef.current);
+
+    setMarkers([marker])
+    mapRef.current.flyTo({
+      center: [card.longitude, card.latitude],
+      zoom: 14,
+      speed: 1.2,
+      curve: 1,
+      essential: true,
+    });
+  };
+
   useEffect(() => {
     mapboxgl.accessToken = apiKey
     mapRef.current = new mapboxgl.Map({
@@ -80,24 +97,6 @@ const Map = ({setZoomTo, setExpand}) => {
     );
 
     setMarkers(initialMarkers);
-
-    const zoomTo = (card)  => {
-      markers.forEach(marker => marker.remove());
-      setMarkers([]);
-
-      const marker = new mapboxgl.Marker()
-      .setLngLat([card.longitude, card.latitude])
-      .addTo(mapRef.current);
-
-      setMarkers([marker])
-      mapRef.current.flyTo({
-        center: [card.longitude, card.latitude],
-        zoom: 14,
-        speed: 1.2,
-        curve: 1,
-        essential: true,
-      });
-    };
 
     setZoomTo(() => zoomTo );
 
@@ -135,13 +134,17 @@ const Map = ({setZoomTo, setExpand}) => {
     });
 
     return () => {
-      mapRef.current.remove()
-    }
-  }, [apiKey, setZoomTo ]);
+      mapRef.current.remove();
+    };
+  }, [apiKey, setZoomTo]);
 
   return (
-    <div id='map-container' ref={mapContainerRef}/>
-  )
+    <div id='map-container' ref={mapContainerRef}>
+      {UnescoObject.map((site) => (
+        <UnescoCard key={site.id} site={site} zoomTo={zoomTo} />
+    ))}
+    </div>
+  );
 };
 
 export default Map;
