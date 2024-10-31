@@ -18,6 +18,8 @@ code {
   margin: 8px;
   flex: 1;
   overflow-y: auto;
+  transform: translateY();
+  transition: all 200ms ease-in-out;
 }
 
 .medium-card img {
@@ -57,6 +59,7 @@ code {
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  transition: all 200ms ease-in-out;
 }
 
 .mini-card img {
