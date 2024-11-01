@@ -77,6 +77,22 @@ const Map = ({setZoomTo, setExpand}) => {
     });
 
     mapRef.current.on('load', () => {
+      mapRef.current.addSource('mapbox-transit', {
+        type: 'vector',
+        url: 'mapbox://mapbox.transit-v2'
+      });
+
+      mapRef.current.addLayer({
+        id: 'transit_line_line',
+        source: 'mapbox-transit',
+        'source-layer': 'transit_line',
+        type: 'line',
+        filter: ['==', '$type', 'LineString'],
+        paint: {
+          'line-width': 2,
+          'line-color': 'rgba(66,100,251,0.3)'
+        }
+      })
       const initialMarkers = UnescoObject.flatMap(site =>
         site.coordinates.map(coord => {
         const marker = new mapboxgl.Marker()
